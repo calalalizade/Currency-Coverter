@@ -41,7 +41,6 @@ function convert(f,t){
     .catch(error =>{
         console.log(error.message)
     })
-    offlineMode();
     fitSize();
 }
 
