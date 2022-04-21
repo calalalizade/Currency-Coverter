@@ -48,6 +48,7 @@ inputFrom.addEventListener("input", (e) => {
     .then(data => {
             inputTo.value = inputFrom.value * data.rates[`${to}`];
             inputTo.value = parseFloat(inputTo.value).toFixed(3);
+            if(inputFrom.value === "") inputTo.value = "";
         })
 });
 inputTo.addEventListener("input", (e) => {
@@ -56,6 +57,7 @@ inputTo.addEventListener("input", (e) => {
     .then(data => {
             inputFrom.value = inputTo.value / data.rates[`${to}`];
             inputFrom.value = parseFloat(inputFrom.value).toFixed(3);
+            if(inputTo.value === "") inputFrom.value = "";
         })
 });
 
