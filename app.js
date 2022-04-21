@@ -53,6 +53,9 @@ inputFrom.addEventListener("input", (e) => {
             inputTo.value = parseFloat(inputTo.value).toFixed(3);
             if(inputFrom.value === "") inputTo.value = "";
         })
+    .catch(() =>{
+        document.querySelector(".alert").style.display = "block"
+    })
 });
 inputTo.addEventListener("input", (e) => {
     fetch(`https://api.exchangerate.host/latest?base=${from}&symbols=${to}`)
@@ -62,6 +65,9 @@ inputTo.addEventListener("input", (e) => {
             inputFrom.value = parseFloat(inputFrom.value).toFixed(3);
             if(inputTo.value === "") inputFrom.value = "";
         })
+    .catch(() =>{
+        document.querySelector(".alert").style.display = "block"
+    })
 });
 
 // Input field font size adaptation
