@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto';
+}
+
+
+/* NAVBAR */
+header{
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+
+    background-color: #F5F5F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 12px;
+}
+
+header img{
+    margin-right: 80px;
+}
+
+nav ul{
+    min-width: 800px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #959BA4;
+}
+
+li:first-child a{
+    color: #000000;
+}
+
+#signIn{
+    width: 58px;
+    height: 33px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    margin-left: 100px;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+main h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+main .converter{
+    width: 1050px;
+    height: 900px;
+    margin-top: 100px;
+}
+
+.converter__panel{
+    color: #C6C6C6;
+    font-weight: 400;
+    line-height: 14px;
+
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info{
+    color: #9F9F9F;
+}
+
+/* CONVERT_FROM */
+.convert__from{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+}
+
+.currency__from{
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+}
+.currency__from li{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #E5E5E5;
+}
+.currency__from li:first-child{
+    border-radius: 3px 0px 0px 3px;
+}
+.currency__from li:last-child{
+    border-radius: 0px 3px 3px 0px;
+}
+.currency__from li:nth-child(-n+3){
+    border-right: none;
+}
+.currency__from li:hover{
+    background-color: #833AE0;
+    color: white;
+}
+
+.input__from{
+    margin-top: 30px;
+    padding: 25px 20px;
+    width: 365px;
+    height: 150px;
+
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#from{
+    font-size: 50px;
+    font-weight: 600;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 40px;
+    border: none;
+}
+
+#from:focus{
+    outline: none;
+}
+
+
+
+/* CONVERT TO */
+.convert__to{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+}
+
+#to{
+    font-size: 50px;
+    font-weight: 600;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 40px;
+    border: none;
+}
+
+#to:focus{
+    outline: none;
+}
+
+
+
+
+
+/* hide input field arrows*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="./resources/logo.png" alt="logo" width="89px" height="23px"/> 
+            <nav>
+                <ul>
+                    <li><a href="#bank">BANK</a></li>
+                    <li><a href="#business">BUSINESS</a></li>
+                    <li><a href="#investment">INVESTMENTS</a></li>
+                    <li><a href="#insurance">INSURANCE</a></li>
+                    <li><a href="#mobile">MOBILE</a></li>
+                    <li><a href="#trips">TRIPS</a></li>
+                    <li><a href="#entertainment">ENTERTAINMENT</a></li>
+                </ul>
+            </nav>
+            <button id="signIn">SIGN IN</button>
+        </header>
+
+        <main>
+            <div class="converter">
+                <h1>Currency converter online</h1>
+
+                <div class="converter__panel">
+                    <div class="convert__from">
+                        <span class="info">Convert from</span>
+                        <ul class="currency__from">
+                            <li class="rub">RUB</li>
+                            <li class="usd">USD</li>
+                            <li class="eur">EUR</li>
+                            <li class="gbp">GBP</li>
+                        </ul>
+                        <div class="input__from">
+                            <input type="number" id="from" name="from">
+                            <label><span>1 RUB</span>=<span>0.0135 USD</span></label>
+                        </div>
+                    </div>
+                    
+                    <div class="convert__from">
+                        <span>Convert to</span>
+                        <ul class="currency__from">
+                            <li class="rub">RUB</li>
+                            <li class="usd">USD</li>
+                            <li class="eur">EUR</li>
+                            <li class="gbp">GBP</li>
+                        </ul>
+                        <div class="input__from">
+                            <input type="number" id="to" name="to">
+                            <label><span>1 RUB</span>=<span>0.0135 USD</span></label>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </main>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
