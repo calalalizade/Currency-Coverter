@@ -1,4 +1,4 @@
-# L-3 (Currency Converter) ![StandingOvationGIF](https://user-images.githubusercontent.com/60787777/164496753-80b4049e-1512-45ec-8981-199aa13c71f9.gif)
+# L-3 (Currency Converter) 💱
 
 
 ## 🔗🔗 Currency Converter: [Go To Site](https://edcurrency-converter.netlify.app/)
