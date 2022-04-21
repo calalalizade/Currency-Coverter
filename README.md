@@ -1,6 +1,6 @@
 # L-3 (Currency Converter)
 
-## Currency Converter: [Go To Site](https://edcurrency-converter.netlify.app/)
+## 🔗🔗 Currency Converter: [Go To Site](https://edcurrency-converter.netlify.app/)
 - Interface Layout: [Figma Link](https://www.figma.com/file/jprZt6p7xO6T7oj85woJyi/Converter-m4-part-time?node-id=59%3A0)
 - API used for exchange rates: [API Link](https://api.exchangerate.host/latest)
 
