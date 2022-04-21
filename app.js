@@ -39,6 +39,7 @@ function convert(f,t){
             labelTo.textContent = "1 " + to + " = " + Math.round((1 / data.rates[`${to}`]) * 10000) / 10000 + " " + from;
         })
     offlineMode();
+    fitSize();
 }
 
 // Conversion calculation on value changed
@@ -61,9 +62,21 @@ inputTo.addEventListener("input", (e) => {
         })
 });
 
+// If Network offline
 function offlineMode(){
     if(!navigator.onLine){
         document.querySelector(".converter").style.display = "none";
         document.querySelector(".offline").style.display = "block";
     }
 }
+
+// Input field font size adaptation
+function fitSize(){
+        let initialSize = 50 - inputFrom.value.length;
+        initialSize = initialSize <= 18 ? 18 : initialSize;
+        inputFrom.style.fontSize = initialSize + "px";
+
+        let initialSize2 = 50 - inputTo.value.length;
+        initialSize2 = initialSize2 <= 18 ? 18 : initialSize2;
+        inputTo.style.fontSize = initialSize2 + "px";
+    }
