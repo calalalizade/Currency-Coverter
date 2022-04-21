@@ -49,6 +49,11 @@ li:first-child a{
     border-radius: 4px;
     margin-left: 100px;
 }
+#signIn:hover{
+    background: #833AE0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
 
 /* MAIN */
 main{
@@ -114,9 +119,10 @@ main .converter{
 .currency__from li:nth-child(-n+3){
     border-right: none;
 }
-.currency__from li:hover{
+.active, .currency__from li:hover{
     background-color: #833AE0;
     color: white;
+    cursor: pointer;
 }
 
 .input__from{
@@ -154,6 +160,54 @@ main .converter{
     background-color: white;
 }
 
+.currency__to{
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+}
+.currency__to li{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #E5E5E5;
+}
+.currency__to li:first-child{
+    border-radius: 3px 0px 0px 3px;
+}
+.currency__to li:last-child{
+    border-radius: 0px 3px 3px 0px;
+}
+.currency__to li:nth-child(-n+3){
+    border-right: none;
+}
+.currency__to li:hover{
+    background-color: #833AE0;
+    color: white;
+    cursor: pointer;
+}
+
+.input__to{
+    margin-top: 30px;
+    padding: 25px 20px;
+    width: 365px;
+    height: 150px;
+
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.convert__to{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+}
+
 #to{
     font-size: 50px;
     font-weight: 600;
@@ -166,9 +220,6 @@ main .converter{
 #to:focus{
     outline: none;
 }
-
-
-
 
 
 /* hide input field arrows*/
