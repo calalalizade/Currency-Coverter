@@ -64,14 +64,6 @@ inputTo.addEventListener("input", (e) => {
         })
 });
 
-// // If Network offline
-// function offlineMode(){
-//     if(!navigator.onLine){
-//         document.querySelector(".converter").style.display = "none";
-//         document.querySelector(".offline").style.display = "block";
-//     }
-// }
-
 // Input field font size adaptation
 function fitSize(){
         let initialSize = 50 - inputFrom.value.length;
