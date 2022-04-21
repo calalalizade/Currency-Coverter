@@ -38,6 +38,9 @@ function convert(f,t){
             labelFrom.textContent = "1 " + from + " = " + Math.round((data.rates[`${to}`]) * 10000) / 10000 + " " + to;
             labelTo.textContent = "1 " + to + " = " + Math.round((1 / data.rates[`${to}`]) * 10000) / 10000 + " " + from;
         })
+    .catch(error =>{
+        console.log(error.message)
+    })
     offlineMode();
     fitSize();
 }
@@ -62,13 +65,13 @@ inputTo.addEventListener("input", (e) => {
         })
 });
 
-// If Network offline
-function offlineMode(){
-    if(!navigator.onLine){
-        document.querySelector(".converter").style.display = "none";
-        document.querySelector(".offline").style.display = "block";
-    }
-}
+// // If Network offline
+// function offlineMode(){
+//     if(!navigator.onLine){
+//         document.querySelector(".converter").style.display = "none";
+//         document.querySelector(".offline").style.display = "block";
+//     }
+// }
 
 // Input field font size adaptation
 function fitSize(){
