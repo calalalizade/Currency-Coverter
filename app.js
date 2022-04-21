@@ -38,8 +38,8 @@ function convert(f,t){
             labelFrom.textContent = "1 " + from + " = " + Math.round((data.rates[`${to}`]) * 10000) / 10000 + " " + to;
             labelTo.textContent = "1 " + to + " = " + Math.round((1 / data.rates[`${to}`]) * 10000) / 10000 + " " + from;
         })
-    .catch(error =>{
-        console.log(error.message)
+    .catch(() =>{
+        document.querySelector(".alert").style.display = "block"
     })
     fitSize();
 }
@@ -66,11 +66,11 @@ inputTo.addEventListener("input", (e) => {
 
 // Input field font size adaptation
 function fitSize(){
-        let initialSize = 50 - inputFrom.value.length;
-        initialSize = initialSize <= 18 ? 18 : initialSize;
-        inputFrom.style.fontSize = initialSize + "px";
+    let initialSize = 50 - inputFrom.value.length;
+    initialSize = initialSize <= 18 ? 18 : initialSize;
+    inputFrom.style.fontSize = initialSize + "px";
 
-        let initialSize2 = 50 - inputTo.value.length;
-        initialSize2 = initialSize2 <= 18 ? 18 : initialSize2;
-        inputTo.style.fontSize = initialSize2 + "px";
-    }
+    let initialSize2 = 50 - inputTo.value.length;
+    initialSize2 = initialSize2 <= 18 ? 18 : initialSize2;
+    inputTo.style.fontSize = initialSize2 + "px";
+}
