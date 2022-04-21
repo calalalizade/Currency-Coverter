@@ -1,3 +1,3 @@
 # L-3 (Currency Converter)
 
-[Site Link](https://edcurrency-converter.netlify.app/).
+Site Link: [Go To Site](https://edcurrency-converter.netlify.app/)
