@@ -3,7 +3,7 @@
 
 ## 🔗🔗 Currency Converter: [Go To Site](https://edcurrency-converter.netlify.app/)
 - Interface Layout: [Figma Link](https://www.figma.com/file/jprZt6p7xO6T7oj85woJyi/Converter-m4-part-time?node-id=59%3A0)
-- API used for exchange rates: [API Link](https://api.exchangerate.host/latest)
+- API used for excha nge rates: [API Link](https://api.exchangerate.host/latest)
 ---
 ## Built with 
  ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -23,4 +23,4 @@
 
 
 ![LetsPartySnoopGIF](https://user-images.githubusercontent.com/60787777/164497980-6bca6148-c231-49c0-bbd0-e8e4ee07d048.gif)
-![NanocurrencyCryptocurrencyGIF](https://user-images.githubusercontent.com/60787777/164498232-434fd757-2fd7-4822-bf9e-82f068dec99e.gif)
+
