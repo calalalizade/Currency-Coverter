@@ -1,5 +1,4 @@
 # L-3 (Currency Converter) 💱
-fasdlfjasdlk
 
 
 ## 🔗🔗 Currency Converter: [Go To Site](https://edcurrency-converter.netlify.app/)
